@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PINCET</title>
+    <link rel="shortcut icon" href="./img/fav.png" type="image/png">
+    <meta name="discription" content="discription">
+    <meta name="theme-color" content="#c9e0e04d">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+  </head>
+  <body>
+    <div class="overlay hidden" id="overlay"></div>
+    <div class="hero-bg" style="background: url(./img/hero/hero-bg.jpg) no-repeat top; position:relative; background-size: cover;">
+      <div class="heart heart1"><img src="./img/header/heart-icon1.png" alt="heart"></div>
+      <div class="heart heart2"><img src="./img/header/heart-icon2.png" alt="heart"></div>
+      <header class="header" id="header">
+        <div class="container">
+          <div class="header__top-line">
+            <div class="logo"><img src="./img/logo.png" alt="PINCET"></div>
+            <div class="header__item dn900">
+              <p class="fz15">Студия депиляции и<br>массажный кабинет<br>в Бресте</p>
+            </div>
+            <div class="header__item dn900">
+              <div class="location">
+                <div class="location-img"><img src="./img/header/location-img.png" alt="location"></div>
+                <div class="location__info">
+                  <div class="adress fw700 fz16">
+                    Мы находимся в центре:<br><span class="fw300">г. Брест, ул. Гоголя, д.65</span></div>
+                  <div class="header__open-map ttu fz12 fw500">Смотреть на карте
+                    <div class="header__map show">
+                      <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/153/brest/?utm_medium=mapframe&amp;utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Бресте</a><a href="https://yandex.ru/maps/153/brest/house/ZkoYcA5oSEMPQFtofXx4cn9gZw==/?ll=23.698168%2C52.093334&amp;sll=73.368212%2C54.989342&amp;sspn=0.986023%2C0.322570&amp;utm_medium=mapframe&amp;utm_source=maps&amp;z=17.09" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Гоголя, 65 — Яндекс.Карты</a>
+                        <iframe src="https://yandex.ru/map-widget/v1/-/CCQhF-Vp~C" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header__item header__item-phone">
+              <div class="phone">
+                <div class="icon"><img src="./img/header/phone-icon.png" alt="phone"></div>
+                <div class="phone__wrap">
+                  <div class="phone__text fz12">
+                    <span class="circle"></span>Звоните, мы сейчас работаем</div><a class="phone__item link fz24" href="tel:+375333822499">+375 33 382 24 99</a>
+                </div>
+              </div>
+              <div class="working-time">
+                <div class="icon"><img src="./img/header/clock-icon.png" alt="time"></div>
+                <div class="fz16 fw300">Пн-Вс <span class="fw700">9:00-21:00</span></div>
+              </div>
+            </div>
+            <button class="btn btn-icon header__btn dn900" id="program-btn"><img class="icon-btn" src="./img/header/calendar.png" alt="calendar">Записаться онлайн</button>
+            <button class="burger "><span class='burger__line'>Open</span></button>
+          </div>
+          <nav class="header-nav dn900">
+            <ul class="nav fz15 fw300">
+              <li><a class="link active-menu-item" href="#">Главная</a></li>
+              <li><a class="link" href="#">Шугаринг и депиляция воском</a></li>
+              <li><a class="link" href="#">Антицеллюлитный массаж</a></li>
+              <li><a class="link" href="#">Классический массаж</a></li>
+              <li><a class="link" href="#">Обучение</a></li>
+              <li><a class="link" href="#">Косметика для мастеров</a></li>
+              <li><a class="link" href="#">Статьи</a></li>
+              <li><a class="link" href="#">О студии</a></li>
+              <li><a class="link" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="hero">
+            <div class="container hero__container">
+              <div class="hero__content">
+                <h1 class="title">
+                  <span>Хотите избавиться от</span><br>нежелательных волос<br><span>или нужен сеанс</span><br>антицеллюлитного массажа?</h1>
+                <div class="list hero__list">
+                  <li class="mb20"><span class="red-circle">circle</span>
+                    <p class="fz18 fw300">депиляция воском и Шугаринг;</p>
+                  </li>
+                  <li class="mb20"><span class="red-circle">circle</span>
+                    <p class="fz18 fw300">профессиональные сертифицированные мастера;</p>
+                  </li>
+                  <li class="mb20"><span class="red-circle">circle</span>
+                    <p class="fz18 fw300">работаем и с женщинами, и с мужчинами;</p>
+                  </li>
+                  <li class="mb20"><span class="red-circle">circle</span>
+                    <p class="fz18 fw300">результат уже после первой процедуры.</p>
+                  </li>
+                </div>
+                <button class="btn btn-big btn-img-right btn--bg-red ttu mt40" id="card-btn">Получить карту клиента бесплатно<img class="btn-img hero__btn-img" src="./img/hero/branch.png" alt="branch"/></button>
+                <div class="card">
+                  <div class="card__img"><img src="./img/hero/card-2.png" alt="card"/></div>
+                  <div class="card__heart"><img src="./img/hero/heart-icon3.png" alt="heart"/></div>
+                  <div class="card__info" id="hero-info"><img src="./img/hero/info-svg.svg" alt="info"/></div>
+                  <div class="card__text hidden fz14 fw300" id="hero-info-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="hero__img dn900"><img src="./img/hero/woman.png" alt="img"/></div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-img">
+          <button class="down" type="button"></button>
+          <div class="circlr-bounce item1"></div>
+          <div class="circlr-bounce item2"></div>
+          <div class="circlr-bounce item3"></div>
+        </div>
+        <div class="modal-send show hidden" id="header-modal">
+          <div class="close"><img src="./img/header/close-icon.png" alt="close"></div>
+          <div class="modal-send__img mb20"><img src="./img/header/ok.png" alt="ok"></div>
+          <p class="modal-send__text fz30 fw700">Ваш заказ принят.<br><span>Ожидайте звонка</span></p>
+          <div class="modal-send__bg-img"><img src="./img/header/leaves.png" alt="leaves"></div>
+        </div>
+        <div class="modal-form show hidden" id="header-form">
+          <div class="close"><img id="close" src="./img/header/close-icon.png" alt="close"></div>
+          <h3 class="modal-form__title mb20">Получите <span class='fw300'>программу обучения</span></h3>
+          <p class="modal-form__discr fz16 fw300">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
+          <div class="modal-form__img-bg"><img src="./img/header/book.png" alt="img"></div>
+          <form class="mt40" id="header-form" action="#">
+            <div class="select">Повыешение квалификации<span class="arrow"><img src="./img/header/arrow-down.png" alt="arrow"></span>
+              <ul class="select__list show">
+                <li class="select__option mb20">Повыешение квалификации</li>
+                <li class="select__option mb20">Повыешение квалификации</li>
+                <li class="select__option">Повыешение квалификации</li>
+              </ul>
+            </div>
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="tel" placeholder="Ваш номер телефона" required>
+            <button class="btn btn-big btn--bg-red ttu modal-form__btn fz18 fw700" id="get-program" type="submit">Получить программу<img class="btn-img modal-form__btn-img" src="./img/header/flower.png" alt="flower"></button>
+          </form>
+        </div>
+      </header>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/vendor.js"></script>
+  </body>
+</html>
